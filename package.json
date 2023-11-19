@@ -1,0 +1,26 @@
+{
+  "name": "tsimp-repro",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "_prettier": "prettier src/**/*.{ts,js,json}",
+    "build": "rm -rf dist && tsc",
+    "fmt": "yarn _prettier --write"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/node": "^20.9.2",
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "tsimp": "^2.0.5",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "yarn@4.0.2"
+}
